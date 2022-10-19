@@ -1,0 +1,14 @@
+.button-filters{
+    background-color: #F5F4FA;
+    color: #212121;
+}
+.button-filters:hover, :focus{
+    color: #f0f0f0;
+    background-color: #0d99ff;
+}
+.contacts{
+    color: #212121;
+}
+.contacts:hover, :focus{
+    color: #2196F3;
+}
