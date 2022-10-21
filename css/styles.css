@@ -1,3 +1,54 @@
+.body{
+    background-color: #F5F5F5 ;
+    color: #212121;
+}
+/* Logo */
+.logo{
+
+}
+.logo{
+    color: #2196F3;
+    text-decoration: none;
+}
+.logo-last-part{
+   color:  #000000;
+}
+.list{
+    list-style: none;
+}
+/* navigation */
+.site-nav .link{
+    color: #212121;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: #2196F3;
+}
+
+/* шапка */
+section.hero{
+    background: #2F303A;
+    color: #FFFFFF;
+}
+button{
+    color: #FFFFFF;
+    background-color:#2196F3;
+}
+button:hover,
+button:focus{ 
+    color: :#FFFFFF;
+    background-color: #188CE8;
+}
+ /* sections */
+ section{
+color: #212121;
+background-color: #FFFFFF;
+ }
+section.p{
+    color:#757575 ;
+}
+
 .button-filters{
     background-color: #F5F4FA;
     color: #212121;
@@ -11,4 +62,19 @@
 }
 .contacts:hover, :focus{
     color: #2196F3;
+} 
+
+
+
+/* 
+/* contacts */
+.contacts{
+  
+    text-decoration: none;
+    color: tomato;
 }
+.contacts:hover,
+.link:focus{
+    color: #2196F3;
+} */
+
