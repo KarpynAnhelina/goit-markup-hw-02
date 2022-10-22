@@ -64,17 +64,28 @@ section.p{
     color: #2196F3;
 } 
 
+/* footer */
 
+.adress{
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
 
-/* 
-/* contacts */
-.contacts{
-  
+.adress-link{
+    color: #FFFFFF;
     text-decoration: none;
     color: tomato;
 }
-.contacts:hover,
-.link:focus{
-    color: #2196F3;
-} */
+.adress-mail, .adress-tel{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+.portfolio>h3{
+ color: #212121;
+}
+.portfolio>p{
+    color:  #EEEEEE;
+    ;
+}
+
 
