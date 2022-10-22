@@ -1,91 +1,94 @@
+:root {
+    --primery-text-color: #212121;
+    --tittle-text-color: #757575;
+    --accent-text-color:#2196F3;
+    --secondry-text-color: #FFFFFF;
+    --primery-bg-color: #ffffff;
+}
 .body{
-    background-color: #F5F5F5 ;
-    color: #212121;
+   background-color: var(--primery-bg-color);
+    color: var(--primery-text-color);
 }
 /* Logo */
 .logo{
-
-}
-.logo{
-    color: #2196F3;
+    color: var(--accent-text-color);
     text-decoration: none;
 }
 .logo-last-part{
-   color:  #000000;
+   color: var(--primery-text-color);
 }
 .list{
     list-style: none;
 }
 /* navigation */
 .site-nav .link{
-    color: #212121;
+    color: var(--primery-text-color);
     text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color: #2196F3;
+    color: var(--accent-text-color);
 }
 
 /* шапка */
 section.hero{
+    color: var(--secondry-text-color);
     background: #2F303A;
-    color: #FFFFFF;
 }
 button{
-    color: #FFFFFF;
+    color: var(--secondry-text-color);
     background-color:#2196F3;
 }
 button:hover,
 button:focus{ 
-    color: :#FFFFFF;
+    color: var(--secondry-text-color);
     background-color: #188CE8;
 }
  /* sections */
  section{
-color: #212121;
-background-color: #FFFFFF;
+color: var(--primery-text-color);
+background-color: var(--primery-bg-color);
  }
 section.p{
-    color:#757575 ;
+color: var(--tittle-text-color);
 }
 
 /* buttons */
 .button-filters{
-    background-color: #F5F4FA;
-    color: #212121;
+    color: var(--primery-text-color);
+ background-color: var(--primery-bg-color);
 }
 .button-filters:hover, :focus{
-    color: #f0f0f0;
+    color: var(--secondry-text-color);
     background-color: #0d99ff;
 }
 .contacts{
-    color: #212121;
+    color: var(--primery-text-color);
 }
 .contacts:hover, :focus{
-    color: #2196F3;
+    color: var(--accent-text-color);
 } 
 
 /* footer */
 
 .adress{
-    color: #FFFFFF;
+    color: var(--secondry-text-color);
     background-color: #2F303A;
 }
 
 .adress-link{
-    color: #FFFFFF;
+    color: var(--secondry-text-color);
     text-decoration: none;
 }
 .adress-mail, .adress-tel{
-    color: #D9D9D9;
+    color: var(--secondry-text-color);
     text-decoration: none;
 }
 .portfolio h3{
- color: #212121;
+ color: var(--primery-text-color);
 }
 .portfolio p{
-    color:  #EEEEEE;
-    
+    color: var(--secondry-text-color);
 }
 
 
