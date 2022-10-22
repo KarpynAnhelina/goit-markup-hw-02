@@ -49,6 +49,7 @@ section.p{
     color:#757575 ;
 }
 
+/* buttons */
 .button-filters{
     background-color: #F5F4FA;
     color: #212121;
@@ -74,18 +75,17 @@ section.p{
 .adress-link{
     color: #FFFFFF;
     text-decoration: none;
-    color: tomato;
 }
 .adress-mail, .adress-tel{
     color: #D9D9D9;
     text-decoration: none;
 }
-.portfolio>h3{
+.portfolio h3{
  color: #212121;
 }
-.portfolio>p{
+.portfolio p{
     color:  #EEEEEE;
-    ;
+    
 }
 
 
