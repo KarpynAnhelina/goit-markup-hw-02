@@ -8,11 +8,17 @@
 .body{
    background-color: var(--primery-bg-color);
     color: var(--primery-text-color);
+    font-family: Roboto, sans-serif; 
+
+
 }
 /* Logo */
 .logo{
     color: var(--accent-text-color);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 .logo-last-part{
    color: var(--primery-text-color);
@@ -21,9 +27,17 @@
     list-style: none;
 }
 /* navigation */
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
 .site-nav .link{
     color: var(--primery-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.14;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -34,29 +48,47 @@
 section.hero{
     color: var(--secondry-text-color);
     background: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    
 }
 button{
     color: var(--secondry-text-color);
-    background-color:#2196F3;
+    background-color:#2196F3;  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
 }
 button:hover,
 button:focus{ 
     color: var(--secondry-text-color);
     background-color: #188CE8;
+    
 }
- /* sections */
- section{
-color: var(--primery-text-color);
-background-color: var(--primery-bg-color);
- }
-section.p{
-color: var(--tittle-text-color);
+.feature-list{
+    color:var(--tittle-text-color);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.71;
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.31;
+    text-align: center;
 }
 
 /* buttons */
 .button-filters{
     color: var(--primery-text-color);
  background-color: var(--primery-bg-color);
+ cursor: pointer;
 }
 .button-filters:hover, :focus{
     color: var(--secondry-text-color);
@@ -91,4 +123,16 @@ color: var(--tittle-text-color);
     color: var(--secondry-text-color);
 }
 
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
