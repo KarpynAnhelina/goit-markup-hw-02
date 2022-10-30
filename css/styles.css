@@ -1,139 +1,104 @@
-:root {
-    --primery-text-color: #212121;
-    --tittle-text-color: #757575;
-    --accent-text-color:#2196F3;
-    --secondry-text-color: #FFFFFF;
-    --primery-bg-color: #ffffff;
+:root{
+    --primery-text-color:#212121;
+    --secondery-text-color:#757575;
+    --accent-text-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --main-background-color: #F5F5F5;
+    --secondery-background-color: #2F303A;
+    --button-background-color: #F5F4FA;
 }
-.body{
-   background-color: var(--primery-bg-color);
-    color: var(--primery-text-color);
-    font-family: Roboto, sans-serif; 
-    text-decoration: none;
+body{
+    color:var(--primery-text-color);
+    background-color:var(--main-background-color) ;
 }
-/* Logo */
-.logo{
-    color: var(--accent-text-color);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
-.logo-last-part{
-   color: var(--primery-text-color);
-}
-.list{
+
+ul{
     list-style: none;
 }
-/* navigation */
-.site-nav {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+
+.logo{
+    color: var(--accent-text-color);
+}
+.logo-last-part{ 
+    color: var(--primery-text-color);
 }
 .site-nav .link{
     color: var(--primery-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height:1.14;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-text-color);
 }
+.site-nav .link.current {
+     color: var(--accent-text-color);
+}
+.contact{
+    color: var(--secondery-text-color);
+}
+.contact:hover, .contact:focus{
+    color:var(--accent-text-color);
+}
 
-/* шапка */
-section.hero{
-    color: var(--secondry-text-color);
-    background: #2F303A;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    text-transform: uppercase;
-    
+
+ /* hero- секція головна в шапці */
+ .hero{
+    color: var(--white-text-color);
+    background-color: var(--secondery-background-color);
 }
-button{
-    color: var(--secondry-text-color);
-    background-color:#2196F3;  
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
+
+/* sections-секції */
+.section-title{
+    color:var(--primery-text-color);
+
 }
-button:hover,
-button:focus{ 
-    color: var(--secondry-text-color);
-    background-color: #188CE8;
+
+.portfolio-title{
+    color:var(--primery-text-color);
 }
-    
-/* } h2 */
-.section-tittle{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.31;
-    text-align: center;
+/* features-функції в секції */
+.features .title{
+    color:var(--primery-text-color);
 }
-.portfolio-links{
-    color: var(--primery-text-color);
-    text-decoration: none;
-}
-/* h3 */
 .feature-list{
-    color:var(--tittle-text-color);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1.71;
+    color:var(--secondery-text-color);
 }
 
-   /* buttons */
-.button-filters{
-    color: var(--primery-text-color);
- background-color: var(--primery-bg-color);
- cursor: pointer;
-}
-.button-filters:hover, :focus{
-    color: var(--secondry-text-color);
-    background-color: #0d99ff;
-}
-.contacts{
-    color: var(--primery-text-color);
-}
-.contacts:hover, :focus{
-    color: var(--accent-text-color);
-} 
-
-/* footer */
-
+/* footer-підвал */
 .adress{
-background: #2F303A;
-text-decoration: none;
-font-style: normal;
+    color: var(--white-text-color);
+    background-color: var(--secondery-background-color)
 }
-.adress-link{
-    color: var(--secondry-text-color);
-    text-decoration: none;
+.adress .adress-link{
+    color: var(--white-text-color);
 }
 .adress-mail, .adress-tel{
-    color:var(--tittle-text-color);
-    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6)
+}
+/* buttons 
+
+
+.button-filters:hover,
+.button-filters:focus{
+    color: var(--white-text-color);
+}
+*/
+
+.button{
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+.button.primery{
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+.button.secondary{
+    color: var(--primery-text-color);
+    background-color: var(--button-background-color);
+}
+.button.secondary:hover{
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
 }
 
 
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
