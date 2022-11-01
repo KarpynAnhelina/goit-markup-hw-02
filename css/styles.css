@@ -56,6 +56,7 @@ ul{
     line-height: 16px;
     letter-spacing: 1.15;
     text-decoration: none;
+    font-style: normal;
 }
 .contact:hover, .contact:focus{
     color:var(--accent-text-color);
@@ -71,10 +72,23 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase; 
 }
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 
 /* sections-секції */
+.title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
  .section-title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
@@ -98,6 +112,14 @@ ul{
     .features{
         text-align: none;
     }
+.team-title{
+    color: var(--primery-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
 .features .title{
     color:var(--primery-text-color);
     
@@ -114,7 +136,6 @@ ul{
 }
 
 .portfolio-links .title{
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -132,15 +153,24 @@ ul{
     line-height: 1.7;
     font-style: normal;
     text-decoration: none;
-
 }
-.adress-mail, .adress-tel{
-    color:rgba(255, 255, 255, 0.6);
+.adress-link:hover,
+.adress-link:focus{
+    color: var(--accent-text-color);
+}
+.footer-contact{
+    color: var(--secondery-text-color);
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
-    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     text-decoration: none;
-}
+    font-style: normal;
+    }
+    .footer-contact:hover, .contact:focus{
+        color:var(--accent-text-color);
+    }
+
 /* buttons */
 .button{
     font-family: inherit;
@@ -158,10 +188,16 @@ ul{
 
 }
 .button.secondary{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--primery-text-color);
     background-color: var(--button-background-color);
 }
-.button.secondary:hover{
+.button.secondary:hover,
+.button.secondary:focus{
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 }
