@@ -1,3 +1,4 @@
+
 :root{
     --primery-text-color:#212121;
     --secondery-text-color:#757575;
@@ -13,6 +14,7 @@ body{
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+
 
 ul{
     list-style: none;
