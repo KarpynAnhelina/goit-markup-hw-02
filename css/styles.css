@@ -14,12 +14,12 @@ body{
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-
-
-ul{
+.list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
+             /* LOGO */
 .logo{
     color: var(--accent-text-color);
     font-family: Raleway, sans-serif;
@@ -35,7 +35,29 @@ ul{
 .footer-studio{
     color: var(--white-text-color);
 }
+.section-footer .logo{
+    margin-bottom: 20px;
+}
+.section-header{
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+     /* NAVIGATION */
+.nav-page{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display:flex;
+    margin-left: 93px;
+}
+.site-nav .item + .item {
+    margin-left: 50px;
+  }
 .site-nav .link{
+    display: block;
+    padding: 32px 0;
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -43,13 +65,23 @@ ul{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-text-color);
 }
 .site-nav .link.current {
      color: var(--accent-text-color);
+}
+        /* CONTACTS */
+.contact-list{
+    display: flex;
+    margin-left: auto;
+}
+.contact-list .item + .item{
+    margin-left: 50px;
+}
+.contact:hover, .contact:focus{
+    color:var(--accent-text-color);
 }
 .contact{
     color: var(--secondery-text-color);
@@ -60,21 +92,21 @@ ul{
     text-decoration: none;
     font-style: normal;
 }
-.contact:hover, .contact:focus{
-    color:var(--accent-text-color);
-}
  /* hero- секція головна в шапці */
- .hero{
+ .section-hero{
+    padding: 200px 0;
+    margin-bottom: 94px;
+    text-align: center; 
     color: var(--white-text-color);
     background-color: var(--secondery-background-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase; 
+    
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -82,21 +114,68 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
+  
 /* sections-секції */
 .title{
+    margin-top: 0;
+    margin-bottom: 10px ;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
- .section-title{
+.features .title{
+    color:var(--primery-text-color);   
+    }
+    .features{
+    display: flex;
+    }
+ .feature-list{
+     margin-top: 0;
+     color:var(--secondery-text-color);
+     font-size: 14px;
+     line-height: 1.8;
+    }
+
+    .feature-item{
+        margin-right: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    .section-feature{
+     margin-top: 0;
+     margin-bottom: 94px;
+    }
+ .feature-title, .section-title, .section-team-title{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
 }
+/* SECTION-WORK */
+.work-list{
+    display: flex;
+    margin-bottom: 94px;
+}
+.work-list .item + .item{
+    margin-left: 30px;
+}
+/* OUR TEAM */
 .section-team{
+    padding: 94px 215px;
     background-color: var(--button-background-color);
+}
+.team-list{
+display: flex;
+}
+.team-list .item{
+    display: block;
+}
+.team-list .item + .item{
+    margin-left: 30px;
 }
 .team-links{
     font-weight: 500;
@@ -120,18 +199,27 @@ ul{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-
-}
-.features .title{
-    color:var(--primery-text-color);
-    
-}
-.feature-list{
-    color:var(--secondery-text-color);
-    font-size: 14px;
-    line-height: 1.8;
 }
 /*portfolio*/
+.section-portfolio{
+    margin-top: 0;
+    margin-bottom:106px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-list .item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-list .item:nth-child(3n){
+margin-right: 0px;
+}
+.portfolio-list .item:nth-last-child(-n+3){
+margin-bottom: 0%;
+}
+
 .portfolio-links{
     color:var(--primery-text-color);
     text-decoration: none;
@@ -144,20 +232,26 @@ ul{
 
 }
 /* footer-підвал */
-.adress{
+.section-footer{
+    padding-top:60px;
+    padding-bottom: 60px;
     color: var(--white-text-color);
     background-color: var(--secondery-background-color);
 }
+.section-footer .logo{
+    display: block;
+    margin-bottom: 30px;
+}
 
-.adress .adress-link{
+.address-list .address-link{
     color: var(--white-text-color);
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
     text-decoration: none;
 }
-.adress-link:hover,
-.adress-link:focus{
+.address-link:hover,
+.address-link:focus{
     color: var(--accent-text-color);
 }
 .footer-contact{
@@ -174,12 +268,19 @@ ul{
     }
 
 /* buttons */
+.button-list{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 .button{
     font-family: inherit;
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
     text-align: center;  
     cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
 } 
 
 .button.primery{ 
@@ -187,9 +288,14 @@ ul{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    border-color: var(--accent-text-color)
+} 
 
-}
+
 .button.secondary{
+    margin-top: 0;
+    margin-bottom: 34px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -197,7 +303,12 @@ ul{
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
     background-color: var(--button-background-color);
+    border-radius: 4px;
+} 
+.button-list .item +.item{
+    margin-left: 8px;
 }
+
 .button.secondary:hover,
 .button.secondary:focus{
     color: var(--white-text-color);
@@ -216,3 +327,13 @@ ul{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+.container{
+    align-items: center;
+   margin:auto;
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   outline: 5px solid rebeccapurple;
+}
+
