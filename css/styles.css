@@ -34,22 +34,10 @@ img{
     line-height: 1.2;
     text-decoration: none;
 }
-.footer-logo{
-    /* margin-bottom: 20px; */
-    color: var(--accent-text-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-}
 .logo-studio{ 
     color: var(--primery-text-color);
 }
 
-.footer-studio{
-    color: var(--white-text-color);
-}
 
 .section-header{
 border: 1px solid var(--primery-text-color);
@@ -260,6 +248,17 @@ margin-bottom: 0%;
 
 }
 /* footer-підвал */
+.footer-logo{
+    color: var(--accent-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.footer-studio{
+    color: var(--white-text-color);
+}
 .section-footer{
     padding-top:60px;
     padding-bottom: 60px;
