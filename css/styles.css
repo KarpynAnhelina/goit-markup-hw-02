@@ -172,15 +172,15 @@ border: 1px solid var(--primery-text-color);
 
 /* OUR TEAM */
 .section-team{
-    padding: 94px 0;
     background-color: var(--button-background-color);
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .team-title{
     padding-bottom: 50px;
     color: var(--primery-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16px;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -188,7 +188,7 @@ border: 1px solid var(--primery-text-color);
 display: flex;
 }
 .team-list .item{
-    display: block;
+  display: block;
 }
 .team-list .item + .item{
     margin-left: 30px;
@@ -197,7 +197,7 @@ display: flex;
     background-color: var(--white-text-color);
     padding-top: 30px;
     padding-bottom: 30px;
-   
+    border-radius: 0px 0px 4px 4px;
 }
 .item-title{
     color:var(--primery-text-color);
@@ -210,7 +210,6 @@ display: flex;
 }
 .subtitle{
     margin-top: 10px;
-   
     color:var(--secondery-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -219,6 +218,15 @@ display: flex;
     letter-spacing: 0.03em;
     }
 /*portfolio*/
+.about-projects .title{
+    margin-bottom: 4px;;
+}
+.portfolio-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
 .section-portfolio{
     padding-top: 94px;
     padding-bottom:94px;
@@ -227,6 +235,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  
 }
    
 /* .portfolio-list .item{
@@ -240,7 +249,11 @@ margin-right: 0px;
 margin-bottom: 0%;
 }  */
 .about-projects{
+    margin-bottom: 30px;
     padding:20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 
 }
 .portfolio-links{
@@ -310,6 +323,7 @@ margin-bottom: 0%;
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-bottom: 34px;
 }
 .button{
     font-family: inherit;
@@ -335,7 +349,6 @@ margin-bottom: 0%;
 .button.secondary{
     padding: 6px 22px;
     margin-top: 0;
-    margin-bottom: 34px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
