@@ -11,16 +11,19 @@
 body{
     color:var(--primery-text-color);
     background-color:var(--white-text-color);
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
-}
+    font-family: Roboto, sans-serif;}
 .list{
     list-style: none;
     margin: 0;
     padding: 0;
 }
+h1, h2,h3,p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
              /* LOGO */
 .logo{
+    padding: 32px 0;
     color: var(--accent-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -39,8 +42,7 @@ body{
     margin-bottom: 20px;
 }
 .section-header{
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid var(--primery-text-color);
 }
 
      /* NAVIGATION */
@@ -95,7 +97,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  /* hero- секція головна в шапці */
  .section-hero{
     padding: 200px 0;
-    margin-bottom: 94px;
     text-align: center; 
     color: var(--white-text-color);
     background-color: var(--secondery-background-color);
@@ -116,57 +117,82 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
   
 /* sections-секції */
-.title{
+.section-feature{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+ .feature-list{
+    display: flex;  
+ 
+ }
+ .feature-item{
+    margin-right:30px;
+    width: 270px;
+ }
+
+ .feature-item:last-child {
+    margin-right: 0;
+ }
+    
+.feature-list .title{
+    color:var(--primery-text-color);   
     margin-top: 0;
     margin-bottom: 10px ;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
-.features .title{
-    color:var(--primery-text-color);   
-    }
-    .features{
-    display: flex;
-    }
- .feature-list{
-     margin-top: 0;
-     color:var(--secondery-text-color);
-     font-size: 14px;
-     line-height: 1.8;
-    }
+.feauture-subtitle{
+    color:var(--secondery-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;    
+    letter-spacing: 0.03em;
+   }
+   .container{
+    align-items: center;
+    margin:auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 5px solid rebeccapurple;
+ }
 
-    .feature-item{
-        margin-right: 30px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    }
-    .section-feature{
-     margin-top: 0;
-     margin-bottom: 94px;
-    }
- .feature-title, .section-title, .section-team-title{
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-}
 /* SECTION-WORK */
+.work-title{
+    margin-bottom: 50px;
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .work-list{
     display: flex;
-    margin-bottom: 94px;
+    justify-content: space-between;
 }
-.work-list .item + .item{
+/* .work-list .item + .item{
     margin-left: 30px;
+} */
+.img{
+    display: block;
 }
 /* OUR TEAM */
 .section-team{
-    padding: 94px 215px;
+    padding: 94px 0;
     background-color: var(--button-background-color);
+}
+.team-title{
+    padding-top: 94px;
+    padding-bottom: 50px;
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 .team-list{
 display: flex;
@@ -177,29 +203,26 @@ display: flex;
 .team-list .item + .item{
     margin-left: 30px;
 }
-.team-links{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    text-decoration: none;
-}
-.team-links .title{
-    color:var(--primery-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.8;}
-    /* features-функції в секції */
-    .features{
-        text-align: none;
-    }
-.team-title{
-    color: var(--primery-text-color);
-    font-size: 16px;
-    line-height: 1.18;
+.about-team{
+    background-color: var(--white-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.8;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.item-title{
+    color:var(--primery-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.subtitle{
+    margin-top: 10px;
+    font-weight: 400;
+    color:var(--secondery-text-color);
+    font-size: 14px;
+   }
 /*portfolio*/
 .section-portfolio{
     margin-top: 0;
@@ -240,7 +263,7 @@ margin-bottom: 0%;
 }
 .section-footer .logo{
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .address-list .address-link{
@@ -284,6 +307,7 @@ margin-bottom: 0%;
 } 
 
 .button.primery{ 
+    padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -328,12 +352,12 @@ margin-bottom: 0%;
     overflow: hidden;
   }
 
-.container{
-    align-items: center;
-   margin:auto;
-   width: 1200px;
-   padding-left: 15px;
-   padding-right: 15px;
-   outline: 5px solid rebeccapurple;
-}
 
+
+ /* .feature-title, .section-title, .section-team-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+} */
